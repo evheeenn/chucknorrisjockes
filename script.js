@@ -207,7 +207,7 @@ form.addEventListener('submit', (event) => {
 	
 	event.preventDefault()
 	let radio = document.querySelector('.categories:checked')
-	if(radio.checked == true){
+	if(radio){
 		getJokeByCategory(radio.value)
 		.then((res => res.json()))
 		.then((res => render([res])))
