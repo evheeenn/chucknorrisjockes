@@ -121,7 +121,7 @@ let render = (data) => {
 		jokeId.textContent= 'ID:'
 		
 		let jokeIdHref = document.createElement('a')
-		jokeIdHref.setAttribute('href', `${el.id}`)
+		jokeIdHref.setAttribute('href', `https://api.chucknorris.io/jokes/${el.id}`)
 		jokeIdHref.textContent = `${el.id}`
 
 		let jokeText = document.createElement('p')
