@@ -287,12 +287,11 @@ fieldset {
 	align-items: center;
 	width: 107px;
 	height: 24px;
-	margin-left: 307px;
 	background: #FFFFFF;
 	border-radius: 6px;
 }
 
-.category-text {
+.joke-category-text {
 	font-size: 10px;
 	letter-spacing: 2px;
 }
@@ -390,13 +389,21 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 	width: 480px;
-	height: 100vh;
+	min-height: 100vh;
 	padding-top: 77px;
 	padding-bottom: 73px;
 	background: #F8F8F8;
 }
 
-@media screen and (min-width: 700px) and (max-width: 834px){
+@media screen and (min-width: 1193px) and (max-width: 1523px) {
+	#menu-wrapper {
+		position: fixed;
+		top: 20px;
+		left: 973px;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 918px){
 
 	#wrapper {
 		width: 100%;
@@ -406,7 +413,8 @@ fieldset {
 	#form-and-jokes-section {
 		width: 100%px;
 		margin-top: 37px;
-		margin-left: 20px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	
 	#favourite-jokes-section {
@@ -427,7 +435,7 @@ fieldset {
 	#menu-wrapper {
 		position: fixed;
 		top: 20px;
-		left: 657px;
+		left: 617px;
 	}
 
 	#menu-wrapper h2 {
@@ -487,7 +495,7 @@ fieldset {
 	#menu-wrapper {
 		position: fixed;
 		top: 20px;
-		left: 207px;
+		left: 227px;
 	}
 
 	#menu-wrapper h2 {
@@ -580,5 +588,55 @@ fieldset {
 		margin-left: 0;
 		left: 87px;
 		position: absolute;
+	}
+}
+
+@media (max-width: 390px){
+	.joke-block {
+		width: 340px;
+	}
+
+	.joke-block-liked {
+		width: 317px;
+	}
+}
+
+@media (max-width: 357px){
+	
+	#menu-wrapper {
+		left: 177px;
+	}
+
+	.joke-block {
+		width: 310px;
+	}
+
+	.like {
+		margin-left: 277px;
+	}
+
+	.joke-wrapper {
+		width: 297px;
+	}
+	
+	.joke {
+		width: 210px;
+	}
+	
+	.joke-text {
+		width: 210px;
+		font-size: 15px;
+	}
+
+	.joke-block-liked {
+		width: 273px;
+	}
+
+	.like-liked {
+		margin-left: 257px;
+	}
+	
+	.joke-text-liked {
+		width: 210px;
 	}
 }
